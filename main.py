@@ -16,9 +16,9 @@ class Student(Model):
 Student.create_table(fail_silently=True)
 
 class Teacher(Model):
-    Teach_name = CharField()
-    Teach_email = CharField()
-    Teach_password = CharField()
+    teach_name = CharField()
+    teach_email = CharField()
+    teach_password = CharField()
 
     class Meta:
         database = db
@@ -26,10 +26,10 @@ class Teacher(Model):
 Teacher.create_table(fail_silently=True)
 
 class Product(Model):
-    Prod_price = CharField()
-    Prod_quantity = CharField()
-    Prod_description = CharField()
-    Prod_color = CharField()
+    prod_price = CharField()
+    prod_quantity = CharField()
+    prod_description = CharField()
+    prod_color = CharField()
 
     class Meta:
         database = db
@@ -37,10 +37,10 @@ class Product(Model):
 Product.create_table(fail_silently=True)
 
 class User(Model):
-    User_name = CharField()
-    User_phone = CharField()
-    User_email = CharField()
-    User_password = CharField()
+    user_name = CharField()
+    user_phone = CharField()
+    user_email = CharField()
+    user_password = CharField()
 
 
     class Meta:
